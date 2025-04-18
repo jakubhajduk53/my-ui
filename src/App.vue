@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from "./components/Button.vue";
+</script>
 
-<template><div></div></template>
+<template>
+  <Button />
+</template>
 
 <style scoped></style>
