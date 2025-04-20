@@ -4,7 +4,7 @@ import Input from "./components/Input.vue";
 </script>
 
 <template>
-  <Button />
+  <Button color="info" />
   <Input />
 </template>
 
