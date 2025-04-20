@@ -1,9 +1,26 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from "vue";
+
+const props = defineProps<ButtonInterface>();
+
+interface ButtonInterface {
+  color?: "primary" | "warning" | "info";
+}
+
+const buttonColor = computed(() => {
+  switch (props.color) {
+    case "primary":
+      return "bg-primary";
+    case "warning":
+      return "bg-warning";
+    case "info":
+      return "bg-info";
+  }
+});
+</script>
 
 <template>
-  <button
-    class="w-20 h-10 rounded-lg cursor-pointer inset-shadow-[0px_0px_15px_hsl(287,61%,29%)] text-[hsl(287,61%,97%)] bg-[hsl(287,61%,65%)]"
-  >
+  <button :class="[buttonColor, 'w-20 h-10 rounded-lg cursor-pointer']">
     123
   </button>
 </template>
