@@ -41,7 +41,7 @@ const buttonColor = computed(() => {
   <button
     :class="[
       buttonColor,
-      'text-font-color w-20 h-10 rounded-lg cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]',
+      'text-font-color min-w-20 px-3 h-10 rounded-lg cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]',
     ]"
   >
     {{ props.text }}
