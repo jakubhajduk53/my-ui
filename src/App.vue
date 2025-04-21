@@ -4,7 +4,15 @@ import Input from "./components/Input.vue";
 </script>
 
 <template>
-  <Button color="info" />
+  <div class="flex gap-5">
+    <Button color="primary" text="primary" />
+    <Button color="secondary" text="secondary" />
+    <Button color="tertiary" text="tertiary" />
+    <Button color="warning" text="warning" />
+    <Button color="danger" text="danger" />
+    <Button color="info" text="info" />
+    <Button color="success" text="success" />
+  </div>
   <Input />
 </template>
 
