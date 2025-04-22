@@ -14,6 +14,7 @@ interface ButtonInterface {
     | "success";
   text?: string;
   rounded?: boolean;
+  size?: string;
 }
 
 const buttonColor = computed(() => {
@@ -37,6 +38,19 @@ const buttonColor = computed(() => {
   }
 });
 
+const buttonSize = computed(() => {
+  switch (props.size) {
+    case "small":
+      return "min-w-16 h-8 px-1 text-sm";
+    case "default":
+      return "min-w-20 h-10 px-3";
+    case "large":
+      return "min-w-25 h-12 px-5 text-lg";
+    default:
+      return "min-w-20 h-10 px-3";
+  }
+});
+
 const borderClasses = computed(() => {
   return props.rounded ? "rounded-full" : "rounded-lg";
 });
@@ -47,7 +61,8 @@ const borderClasses = computed(() => {
     :class="[
       buttonColor,
       borderClasses,
-      'text-font-color min-w-20 px-3 h-10 cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]',
+      buttonSize,
+      'text-font-color cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]',
     ]"
   >
     {{ props.text }}
