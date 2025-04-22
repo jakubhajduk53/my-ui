@@ -13,6 +13,7 @@ interface ButtonInterface {
     | "info"
     | "success";
   text?: string;
+  rounded?: boolean;
 }
 
 const buttonColor = computed(() => {
@@ -35,13 +36,18 @@ const buttonColor = computed(() => {
       return "bg-secondary hover:bg-secondary-dark";
   }
 });
+
+const borderClasses = computed(() => {
+  return props.rounded ? "rounded-full" : "rounded-lg";
+});
 </script>
 
 <template>
   <button
     :class="[
       buttonColor,
-      'text-font-color min-w-20 px-3 h-10 rounded-lg cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]',
+      borderClasses,
+      'text-font-color min-w-20 px-3 h-10 cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]',
     ]"
   >
     {{ props.text }}

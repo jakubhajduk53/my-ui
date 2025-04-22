@@ -3,7 +3,9 @@ import ButtonView from "./views/ButtonView.vue";
 </script>
 
 <template>
-  <ButtonView />
+  <div class="flex items-center justify-center w-full h-full">
+    <ButtonView />
+  </div>
 </template>
 
 <style scoped></style>
