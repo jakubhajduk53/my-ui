@@ -6,33 +6,33 @@
   >
     <RouterLink
       to="/"
-      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
+      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 hover:bg-[hsl(26,68%,80%)] bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
       >Main Page
     </RouterLink>
     <div class="h-10 w-full bg-[hsl(26,68%,85%)]" />
     <RouterLink
       to="/button"
-      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
+      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 hover:bg-[hsl(26,68%,80%)] bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
       >Button
     </RouterLink>
     <RouterLink
       to="/input"
-      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
+      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 hover:bg-[hsl(26,68%,80%)] bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
       >Input
     </RouterLink>
     <RouterLink
       to="/1"
-      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
+      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 hover:bg-[hsl(26,68%,80%)] bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
       >1
     </RouterLink>
     <RouterLink
       to="/2"
-      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
+      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 hover:bg-[hsl(26,68%,80%)] bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
       >2
     </RouterLink>
     <RouterLink
       to="/3"
-      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
+      class="py-3 w-full text-xl md:text-3xl cursor-pointer border-2 hover:bg-[hsl(26,68%,80%)] bg-[hsl(26,68%,90%)] border-[hsl(26,68%,85%)]"
       >3
     </RouterLink>
   </div>

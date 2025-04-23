@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import Button from "../components/Button.vue";
+import Table from "../components/Table.vue";
+
+const data = [
+  { name: "Color", description: "", type: "enum", default: "secondary" },
+  { name: "Text", description: "", type: "string", default: "" },
+  { name: "Rounded", description: "", type: "boolean", default: "default" },
+  { name: "Size", description: "", type: "enum", default: "default" },
+];
 </script>
 
 <template>
@@ -34,6 +42,9 @@ import Button from "../components/Button.vue";
         </div>
       </div>
     </div>
+  </div>
+  <div class="flex items-center justify-center my-10">
+    <Table :rows="data" />
   </div>
 </template>
 
