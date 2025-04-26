@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Button from "../components/Button.vue";
 import Table from "../components/Table.vue";
+import CodeDisplay from "../components/CodeDisplay.vue";
 
 const data = [
   { name: "Color", description: "", type: "enum", default: "secondary" },
@@ -25,6 +26,7 @@ const data = [
           <Button color="danger" text="danger" />
           <Button color="info" text="info" />
         </div>
+        <CodeDisplay />
       </div>
       <div class="flex flex-col items-center gap-3">
         <p class="text-xl md:text-3xl">Border radius</p>
