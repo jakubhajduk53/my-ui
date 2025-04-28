@@ -4,14 +4,6 @@ import { ref } from "vue";
 defineProps({ text: String });
 
 const showCode = ref<boolean>(false);
-
-const test = `<Button color="primary" text="primary" /> 
-<Button color="secondary" text="secondary" />
-<Button color="tertiary" text="tertiary" />
-<Button color="success" text="success" />
-<Button color="warning" text="warning" />
-<Button color="danger" text="danger" />
-<Button color="info" text="info" />`;
 </script>
 
 <template>
@@ -26,9 +18,11 @@ const test = `<Button color="primary" text="primary" />
     >
       Show code &lt;/&gt;
     </div>
-    <code class="whitespace-pre bg-[hsl(0,0%,93%)] p-5" v-if="showCode">{{
-      test
-    }}</code>
+    <code
+      class="whitespace-pre bg-radial from-[hsl(0,0%,93%)] to-[hsl(0,0%,80%)] rounded-xl p-5 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]"
+      v-if="showCode"
+      >{{ text }}</code
+    >
   </div>
 </template>
 

@@ -16,7 +16,7 @@ const columns = computed(() => {
 
 <template>
   <div
-    class="flex flex-col h-full w-full gap-5 items-center justify-center my-10 bg-[hsl(26,68%,97%)] self-end"
+    class="flex flex-col h-full w-full gap-5 items-center justify-center my-10 bg-[hsl(26,68%,97%)]"
   >
     <hr class="w-full" />
     <div class="text-center">

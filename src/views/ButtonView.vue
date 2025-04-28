@@ -9,6 +9,21 @@ const data = [
   { name: "Rounded", description: "", type: "boolean", default: "default" },
   { name: "Size", description: "", type: "enum", default: "default" },
 ];
+
+const themesDisplay = `<Button color="primary" text="primary" /> 
+<Button color="secondary" text="secondary" />
+<Button color="tertiary" text="tertiary" />
+<Button color="success" text="success" />
+<Button color="warning" text="warning" />
+<Button color="danger" text="danger" />
+<Button color="info" text="info" />`;
+
+const radiusDisplay = `<Button color="primary" text="default" />
+<Button rounded color="primary" text="rounded" />`;
+
+const sizeDisplay = `<Button size="small" color="secondary" text="small" />
+<Button size="default" color="secondary" text="default" />
+<Button size="large" color="secondary" text="large" />`;
 </script>
 
 <template>
@@ -26,7 +41,7 @@ const data = [
           <Button color="danger" text="danger" />
           <Button color="info" text="info" />
         </div>
-        <CodeDisplay />
+        <CodeDisplay :text="themesDisplay" />
       </div>
       <div class="flex flex-col items-center gap-3">
         <p class="text-xl md:text-3xl">Border radius</p>
@@ -34,6 +49,7 @@ const data = [
           <Button color="primary" text="default" />
           <Button rounded color="primary" text="rounded" />
         </div>
+        <CodeDisplay :text="radiusDisplay" />
       </div>
       <div class="flex flex-col items-center gap-3">
         <p class="text-xl md:text-3xl">Size</p>
@@ -42,6 +58,7 @@ const data = [
           <Button size="default" color="secondary" text="default" />
           <Button size="large" color="secondary" text="large" />
         </div>
+        <CodeDisplay :text="sizeDisplay" />
       </div>
     </div>
   </div>
