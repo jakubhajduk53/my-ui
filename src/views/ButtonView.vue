@@ -4,10 +4,23 @@ import Table from "../components/Table.vue";
 import CodeDisplay from "../components/CodeDisplay.vue";
 
 const data = [
-  { name: "Color", description: "", type: "enum", default: "secondary" },
+  {
+    name: "Color",
+    description: "",
+    type: "enum",
+    enumTooltip:
+      "primary | secondary | tertiary | success | warning | danger | info",
+    default: "secondary",
+  },
   { name: "Text", description: "", type: "string", default: "" },
   { name: "Rounded", description: "", type: "boolean", default: "default" },
-  { name: "Size", description: "", type: "enum", default: "default" },
+  {
+    name: "Size",
+    description: "",
+    type: "enum",
+    enumTooltip: "small | default | large",
+    default: "default",
+  },
 ];
 
 const themesDisplay = `<Button color="primary" text="primary" /> 
