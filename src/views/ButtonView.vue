@@ -45,9 +45,7 @@ const data = [
       </div>
     </div>
   </div>
-  <div class="flex items-center justify-center my-10">
-    <Table :rows="data" />
-  </div>
+  <Table :rows="data" />
 </template>
 
 <style scoped></style>
