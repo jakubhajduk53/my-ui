@@ -17,7 +17,7 @@ const test = `<Button color="primary" text="primary" />
 <template>
   <div class="flex flex-col">
     <div
-      class="p-3 w-full text-center text-base md:text-xl cursor-pointer select-none"
+      class="p-3 w-full text-center text-base md:text-xl cursor-pointer select-none underline underline-offset-8"
       @click="
         () => {
           showCode = !showCode;

@@ -4,9 +4,9 @@ import Aside from "./components/Aside.vue";
 </script>
 
 <template>
-  <div class="flex items-center justify-center w-full h-full">
+  <div class="flex w-full min-h-screen items-center justify-center">
     <Aside />
-    <div class="flex-1 h-full mt-10">
+    <div class="flex flex-1 flex-col mt-10">
       <RouterView />
     </div>
   </div>
