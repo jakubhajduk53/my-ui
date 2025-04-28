@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import { defineProps, computed } from "vue";
+import { defineProps } from "vue";
 
 interface TableRow {
-  [key: string]: string;
+  name: string;
+  description: string;
+  type: string;
+  default: string;
+  enumTooltip?: string;
 }
 
 const props = defineProps<{
   rows: TableRow[];
 }>();
 
-const columns = computed(() => {
-  return props.rows.length > 0 ? Object.keys(props.rows[0]) : [];
-});
+const columns: (keyof TableRow)[] = ["name", "description", "type", "default"];
 </script>
 
 <template>
@@ -28,16 +30,31 @@ const columns = computed(() => {
               :key="column"
               class="p-3 font-semibold"
             >
-              {{
-                column[0].toLocaleUpperCase() + column.slice(1, column.length)
-              }}
+              {{ column[0].toUpperCase() + column.slice(1) }}
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(row, rowIndex) in rows" :key="rowIndex">
+          <tr v-for="(row, rowIndex) in props.rows" :key="rowIndex">
             <td v-for="column in columns" :key="column" class="p-3 border">
-              {{ row[column] }}
+              <template v-if="column === 'type' && row.type === 'enum'">
+                <div class="relative group">
+                  <span
+                    class="flex items-baseline cursor-pointer underline underline-offset-4 decoration-dotted"
+                  >
+                    enum<i class="bx bx-info-circle"></i>
+                  </span>
+                  <div
+                    class="absolute hidden group-hover:block bg-[hsl(0,0%,93%)] shadow-lg rounded p-3 -top-10 left-1/2 transform -translate-x-1/2 whitespace-nowrap z-10"
+                  >
+                    {{ row.enumTooltip }}
+                  </div>
+                </div>
+              </template>
+
+              <template v-else>
+                {{ row[column] }}
+              </template>
             </td>
           </tr>
         </tbody>
