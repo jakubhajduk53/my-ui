@@ -45,7 +45,7 @@ const sizeDisplay = `<Button size="small" color="secondary" text="small" />
     <div class="flex flex-col items-center justify-center gap-10">
       <div class="flex flex-col items-center gap-3">
         <p class="text-xl md:text-3xl">Themes</p>
-        <div class="flex gap-5">
+        <div class="flex flex-col sm:flex-row gap-5">
           <Button color="primary" text="primary" />
           <Button color="secondary" text="secondary" />
           <Button color="tertiary" text="tertiary" />
