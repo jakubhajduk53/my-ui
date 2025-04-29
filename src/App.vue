@@ -6,7 +6,7 @@ import Aside from "./components/Aside.vue";
 <template>
   <div class="flex w-full min-h-screen items-center justify-center">
     <Aside />
-    <div class="flex flex-1 flex-col mt-10">
+    <div class="flex flex-1 flex-col mt-10 z-0">
       <RouterView />
     </div>
   </div>

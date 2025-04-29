@@ -7,7 +7,7 @@ import Button from "../components/Button.vue";
     class="flex flex-col gap-10 items-center justify-center text-center -translate-y-25"
   >
     <p class="text-3xl md:text-5xl font-bold">Welcome to MyUI</p>
-    <p class="text-xl md:text-3xl w-[30em]">
+    <p class="text-xl md:text-3xl w-[30em] max-w-[90vw]">
       Build beautiful, responsive interfaces with ease.<br />
       Designed for speed, clarity, and creativity
     </p>
