@@ -32,9 +32,9 @@ const switchAside = () => {
         >Button
       </RouterLink>
       <RouterLink
-        to="/input"
+        to="/color"
         class="py-3 w-full text-xl md:text-3xl font-semibold cursor-pointer border-2 rounded-xl bg-[hsl(26,68%,95%)] hover:bg-[hsl(26,68%,92%)] border-[hsl(26,68%,92%)] inset-shadow-[0px_0px_15px_hsl(26,68%,75%)]"
-        >Input
+        >Color
       </RouterLink>
     </div>
 
