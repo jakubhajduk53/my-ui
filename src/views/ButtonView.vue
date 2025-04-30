@@ -6,17 +6,27 @@ import CodeDisplay from "../components/CodeDisplay.vue";
 const data = [
   {
     name: "Color",
-    description: "",
+    description: "Defines the component's color theme",
     type: "enum",
     enumTooltip:
       "primary | secondary | tertiary | success | warning | danger | info",
     default: "secondary",
   },
-  { name: "Text", description: "", type: "string", default: "" },
-  { name: "Rounded", description: "", type: "boolean", default: "default" },
+  {
+    name: "Text",
+    description: "The text content displayed inside the component",
+    type: "string",
+    default: "",
+  },
+  {
+    name: "Rounded",
+    description: "Applies rounded corners to the component",
+    type: "boolean",
+    default: "default",
+  },
   {
     name: "Size",
-    description: "",
+    description: "Controls the size of the component",
     type: "enum",
     enumTooltip: "small | default | large",
     default: "default",
