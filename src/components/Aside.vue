@@ -12,11 +12,11 @@ const switchAside = () => {
   <div
     :class="[
       'fixed top-0 left-0 z-10 flex h-screen transition-transform duration-300 ease-in-out',
-      isOpen ? 'translate-x-0' : '-translate-x-[300px]',
+      isOpen ? 'translate-x-0' : '-translate-x-[30vw] md:-translate-x-[15vw]',
     ]"
   >
     <div
-      class="flex flex-col gap-1 md:gap-3 h-full items-center text-center w-[300px] max-w-[30vw] bg-radial from-[hsl(26,68%,97%)] to-[hsl(26,68%,90%)]"
+      class="flex flex-col gap-1 md:gap-3 h-full items-center text-center w-[30vw] md:w-[15vw] bg-radial from-[hsl(26,68%,97%)] to-[hsl(26,68%,90%)]"
     >
       <RouterLink
         to="/"

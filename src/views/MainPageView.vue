@@ -12,7 +12,12 @@ import Button from "../components/Button.vue";
       Designed for speed, clarity, and creativity
     </p>
     <RouterLink to="/button">
-      <Button color="primary" size="large" text="Get Started" />
+      <Button
+        color="primary"
+        size="large"
+        text="Get Started"
+        class="shadow-[0px_0px_5px_hsla(0,0%,0%,50%)] font-semibold"
+      />
     </RouterLink>
   </div>
 </template>
