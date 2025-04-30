@@ -12,11 +12,13 @@ const switchAside = () => {
   <div
     :class="[
       'fixed top-0 left-0 z-10 flex h-screen transition-transform duration-300 ease-in-out',
-      isOpen ? 'translate-x-0' : '-translate-x-[30vw] md:-translate-x-[15vw]',
+      isOpen
+        ? 'translate-x-0'
+        : '-translate-x-[50vw] sm:-translate-x-[30vw] md:-translate-x-[15vw]',
     ]"
   >
     <div
-      class="flex flex-col gap-1 md:gap-3 h-full items-center text-center w-[30vw] md:w-[15vw] bg-radial from-[hsl(26,68%,97%)] to-[hsl(26,68%,90%)]"
+      class="flex flex-col gap-1 md:gap-3 h-full items-center text-center w-[50vw] sm-[30vw] md:w-[15vw] bg-radial from-[hsl(26,68%,97%)] to-[hsl(26,68%,90%)]"
     >
       <RouterLink
         to="/"
@@ -38,7 +40,7 @@ const switchAside = () => {
 
     <div
       @click="switchAside"
-      class="flex items-center px-3 text-xl md:text-3xl cursor-pointer bg-[hsl(26,68%,90%)]"
+      class="flex items-center px-1 md:px-3 text-xl md:text-3xl cursor-pointer bg-[hsl(26,68%,90%)]"
     >
       <i :class="isOpen ? 'bx bx-caret-left' : 'bx bx-caret-right'" />
     </div>
