@@ -22,7 +22,7 @@ const data = [
     name: "Rounded",
     description: "Applies rounded corners to the component",
     type: "boolean",
-    default: "default",
+    default: "false",
   },
   {
     name: "Size",
@@ -51,7 +51,11 @@ const sizeDisplay = `<Button size="small" color="secondary" text="small" />
 
 <template>
   <div class="flex flex-col items-center justify-center gap-10">
-    <p class="text-3xl md:text-5xl font-bold">Buttons</p>
+    <p class="text-3xl md:text-5xl font-bold">Button</p>
+    <p class="text-base md:text-xl w-[35em] max-w-[80vw] text-center">
+      Supports multiple color themes, sizes, and optional rounded corners.<br />
+      Easily customizable for consistent design
+    </p>
     <div class="flex flex-col items-center justify-center gap-10">
       <div class="flex flex-col items-center gap-3">
         <p class="text-xl md:text-3xl">Themes</p>

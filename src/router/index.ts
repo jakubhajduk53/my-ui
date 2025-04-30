@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MainPageView from "../views/MainPageView.vue";
 import ButtonView from "../views/ButtonView.vue";
-import InputView from "../views/InputView.vue";
+import ColorView from "../views/ColorView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,9 +17,9 @@ const router = createRouter({
       component: ButtonView,
     },
     {
-      path: "/input",
-      name: "input",
-      component: InputView,
+      path: "/color",
+      name: "color",
+      component: ColorView,
     },
   ],
 });
