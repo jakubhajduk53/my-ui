@@ -29,24 +29,36 @@ const colors = {
       design.<br />
       Uses the HSL model for flexible hue, saturation, and lightness control
     </p>
-    <div class="flex text-[hsl(26,68%,97%)]">
-      <div
-        v-for="(className, name) in colors.light"
-        :key="name"
-        class="p-5"
-        :class="className"
-      >
-        {{ name }}
+    <div class="flex flex-col gap-5 md:gap-10 max-w-[80vw]">
+      <div class="flex flex-col items-center gap-3 md:gap-5">
+        <p class="text-xl md:text-3xl">Light</p>
+        <div
+          class="flex flex-wrap justify-center text-center text-[hsl(26,68%,97%)]"
+        >
+          <div
+            v-for="(className, name) in colors.light"
+            :key="name"
+            class="p-5 w-[150px]"
+            :class="className"
+          >
+            {{ name }}
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="flex text-[hsl(26,68%,97%)]">
-      <div
-        v-for="(className, name) in colors.dark"
-        :key="name"
-        class="p-5"
-        :class="className"
-      >
-        {{ name }}
+      <div class="flex flex-col items-center gap-3 md:gap-5">
+        <p class="text-xl md:text-3xl">Dark</p>
+        <div
+          class="flex flex-wrap text-center justify-center text-[hsl(26,68%,97%)]"
+        >
+          <div
+            v-for="(className, name) in colors.dark"
+            :key="name"
+            class="p-5 w-[150px]"
+            :class="className"
+          >
+            {{ name }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
