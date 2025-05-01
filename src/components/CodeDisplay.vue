@@ -19,7 +19,7 @@ const showCode = ref<boolean>(false);
       Show code &lt;/&gt;
     </div>
     <code
-      class="whitespace-pre text-[hsl(26,68%,97%)] bg-radial from-[hsl(0,0%,25%)] to-[hsl(0,0%,15%)] max-w-[80vw] overflow-x-auto rounded-xl p-3 md:p-5 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]"
+      class="whitespace-pre text-[hsl(26,68%,97%)] bg-[hsl(26,38%,20%)] max-w-[80vw] overflow-x-auto rounded-xl p-3 md:p-5 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]"
       v-if="showCode"
       >{{ text }}</code
     >
