@@ -18,6 +18,10 @@ const colors = {
     "info-dark": "bg-info-dark",
     "success-dark": "bg-success-dark",
   },
+  font: {
+    light: "bg-[hsl(26,68%,20%)] text-font-color",
+    dark: "bg-font-color text-[hsl(26,68%,20%)]",
+  },
 };
 </script>
 
@@ -54,6 +58,21 @@ const colors = {
             v-for="(className, name) in colors.dark"
             :key="name"
             class="p-5 w-[150px]"
+            :class="className"
+          >
+            {{ name }}
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-3 md:gap-5">
+        <p class="text-xl md:text-3xl">Font color</p>
+        <div
+          class="flex flex-wrap justify-center text-center text-[hsl(26,68%,97%)]"
+        >
+          <div
+            v-for="(className, name) in colors.font"
+            :key="name"
+            class="p-5 w-[150px] text-xl md:text-3xl border border-[hsl(26,68%,20%)]"
             :class="className"
           >
             {{ name }}
