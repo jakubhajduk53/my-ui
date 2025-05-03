@@ -37,6 +37,11 @@ const switchAside = () => {
         class="py-3 w-full text-xl md:text-3xl font-semibold cursor-pointer bg-radial from-[hsl(26,18%,55%)] to-[hsl(26,18%,50%)] hover:text-[hsl(26,68%,10%)] transition duration-100"
         >Color
       </RouterLink>
+      <RouterLink
+        to="/code"
+        class="py-3 w-full text-xl md:text-3xl font-semibold cursor-pointer bg-radial from-[hsl(26,18%,55%)] to-[hsl(26,18%,50%)] hover:text-[hsl(26,68%,10%)] transition duration-100"
+        >Code Display
+      </RouterLink>
     </div>
 
     <div
