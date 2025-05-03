@@ -1,5 +1,17 @@
 <script setup lang="ts">
 import CodeDisplay from "../components/CodeDisplay.vue";
+import Table from "../components/Table.vue";
+
+const codeDisplay = `<CodeDisplay :text="Your text" />`;
+
+const data = [
+  {
+    name: "Text",
+    description: "Paste your code there",
+    type: "string",
+    default: "",
+  },
+];
 </script>
 
 <template>
@@ -12,9 +24,10 @@ import CodeDisplay from "../components/CodeDisplay.vue";
         Supports copy-to-clipboard functionality and customizable code block
         styles.
       </p>
-      <CodeDisplay text="Your text" />
+      <CodeDisplay :text="codeDisplay" />
     </div>
   </div>
+  <Table :rows="data" />
 </template>
 
 <style scoped></style>
