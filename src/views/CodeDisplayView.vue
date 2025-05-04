@@ -6,10 +6,16 @@ const codeDisplay = `<CodeDisplay :text="Your text" />`;
 
 const data = [
   {
-    name: "Text",
+    name: "text",
     description: "Paste your code there",
     type: "string",
     default: "",
+  },
+  {
+    name: "copyText",
+    description: "Get your code copyable",
+    type: "boolean",
+    default: "false",
   },
 ];
 </script>
@@ -24,7 +30,7 @@ const data = [
         Supports copy-to-clipboard functionality and customizable code block
         styles.
       </p>
-      <CodeDisplay :text="codeDisplay" />
+      <CodeDisplay copyText :text="codeDisplay" />
     </div>
   </div>
   <Table :rows="data" />
