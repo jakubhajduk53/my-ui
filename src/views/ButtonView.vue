@@ -2,51 +2,12 @@
 import Button from "../components/Button.vue";
 import Table from "../components/Table.vue";
 import CodeDisplay from "../components/CodeDisplay.vue";
-
-const data = [
-  {
-    name: "color",
-    description: "Defines the component's color theme",
-    type: "enum",
-    enumTooltip:
-      "primary | secondary | tertiary | success | warning | danger | info",
-    default: "secondary",
-  },
-  {
-    name: "text",
-    description: "The text content displayed inside the component",
-    type: "string",
-    default: "",
-  },
-  {
-    name: "rounded",
-    description: "Applies rounded corners to the component",
-    type: "boolean",
-    default: "false",
-  },
-  {
-    name: "size",
-    description: "Controls the size of the component",
-    type: "enum",
-    enumTooltip: "small | default | large",
-    default: "default",
-  },
-];
-
-const themesDisplay = `<Button color="primary" text="primary" /> 
-<Button color="secondary" text="secondary" />
-<Button color="tertiary" text="tertiary" />
-<Button color="success" text="success" />
-<Button color="warning" text="warning" />
-<Button color="danger" text="danger" />
-<Button color="info" text="info" />`;
-
-const radiusDisplay = `<Button color="primary" text="default" />
-<Button rounded color="primary" text="rounded" />`;
-
-const sizeDisplay = `<Button size="small" color="secondary" text="small" />
-<Button size="default" color="secondary" text="default" />
-<Button size="large" color="secondary" text="large" />`;
+import {
+  buttonViewData,
+  themesDisplay,
+  radiusDisplay,
+  sizeDisplay,
+} from "../data/";
 </script>
 
 <template>
@@ -89,7 +50,7 @@ const sizeDisplay = `<Button size="small" color="secondary" text="small" />
       </div>
     </div>
   </div>
-  <Table :rows="data" />
+  <Table :rows="buttonViewData" />
 </template>
 
 <style scoped></style>

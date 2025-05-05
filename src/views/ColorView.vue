@@ -1,28 +1,5 @@
 <script setup lang="ts">
-const colors = {
-  light: {
-    primary: "bg-primary",
-    secondary: "bg-secondary",
-    tertiary: "bg-tertiary",
-    warning: "bg-warning",
-    danger: "bg-danger",
-    info: "bg-info",
-    success: "bg-success",
-  },
-  dark: {
-    "primary-dark": "bg-primary-dark",
-    "secondary-dark": "bg-secondary-dark",
-    "tertiary-dark": "bg-tertiary-dark",
-    "warning-dark": "bg-warning-dark",
-    "danger-dark": "bg-danger-dark",
-    "info-dark": "bg-info-dark",
-    "success-dark": "bg-success-dark",
-  },
-  font: {
-    light: "bg-[hsl(26,68%,20%)] text-font-color",
-    dark: "bg-font-color text-[hsl(26,68%,20%)]",
-  },
-};
+import { colors } from "../data/";
 </script>
 
 <template>

@@ -1,23 +1,7 @@
 <script setup lang="ts">
 import CodeDisplay from "../components/CodeDisplay.vue";
 import Table from "../components/Table.vue";
-
-const codeDisplay = `<CodeDisplay :text="Your text" />`;
-
-const data = [
-  {
-    name: "text",
-    description: "Paste your code there",
-    type: "string",
-    default: "",
-  },
-  {
-    name: "copyText",
-    description: "Get your code copyable",
-    type: "boolean",
-    default: "false",
-  },
-];
+import { codeDisplay, codeDisplayData } from "../data/";
 </script>
 
 <template>
@@ -33,7 +17,7 @@ const data = [
       <CodeDisplay copyText :text="codeDisplay" />
     </div>
   </div>
-  <Table :rows="data" />
+  <Table :rows="codeDisplayData" />
 </template>
 
 <style scoped></style>
