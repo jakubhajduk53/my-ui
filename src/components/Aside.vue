@@ -22,23 +22,23 @@ const switchAside = () => {
     >
       <RouterLink
         to="/"
-        class="py-3 w-full text-xl md:text-3xl font-bold cursor-pointer bg-radial transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
+        class="py-3 w-full text-base md:text-2xl font-bold cursor-pointer bg-radial transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
         >Main Page
       </RouterLink>
       <div class="w-full bg-[hsl(26,68%,92%)]" />
       <RouterLink
         to="/button"
-        class="py-3 w-full text-xl md:text-3xl font-semibold cursor-pointer transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
+        class="py-3 w-full text-base md:text-2xl font-semibold cursor-pointer transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
         >Button
       </RouterLink>
       <RouterLink
         to="/color"
-        class="py-3 w-full text-xl md:text-3xl font-semibold cursor-pointer transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
+        class="py-3 w-full text-base md:text-2xl font-semibold cursor-pointer transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
         >Color
       </RouterLink>
       <RouterLink
         to="/code"
-        class="py-3 w-full text-xl md:text-3xl font-semibold cursor-pointer transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
+        class="py-3 w-full text-base md:text-2xl font-semibold cursor-pointer transition duration-100 border-b border-[hsla(26,68%,20%,10%)] hover:text-[hsl(26,20%,15%)]"
         >Code Display
       </RouterLink>
     </div>
