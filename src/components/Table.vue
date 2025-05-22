@@ -47,7 +47,7 @@ const columns: (keyof TableRow)[] = ["name", "description", "type", "default"];
                     enum<i class="bx bx-info-circle"></i>
                   </span>
                   <div
-                    class="absolute hidden group-hover:block bg-[hsl(0,0%,93%)] shadow-lg rounded p-1 md:p-3 -top-10 left-1/2 transform -translate-x-1/2 whitespace-nowrap z-10"
+                    class="absolute hidden group-hover:block bg-radial from-[hsl(26,68%,97%)] to-[hsl(26,68%,93%)] shadow-[3px_3px_3px_hsla(26,68%,20%,25%)] rounded p-1 md:p-3 -top-10 left-1/2 transform -translate-x-1/2 whitespace-nowrap z-10"
                   >
                     {{ row.enumTooltip }}
                   </div>
