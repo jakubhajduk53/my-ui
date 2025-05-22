@@ -45,7 +45,7 @@ const switchAside = () => {
 
     <div
       @click="switchAside"
-      class="flex items-center text-xl md:text-3xl cursor-pointer bg-gradient-to-l from-[hsl(26,68%,90%)] shadow-[3px_0px_3px_hsla(26,68%,20%,15%)]"
+      class="flex items-center text-xl md:text-3xl cursor-pointer bg-gradient-to-l from-[hsl(26,68%,93%)] shadow-[3px_0px_3px_hsla(26,68%,20%,15%)]"
     >
       <i :class="isOpen ? 'bx bx-caret-left' : 'bx bx-caret-right'" />
     </div>
