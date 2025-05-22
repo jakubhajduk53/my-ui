@@ -11,7 +11,8 @@ interface ButtonInterface {
     | "warning"
     | "danger"
     | "info"
-    | "success";
+    | "success"
+    | "transparent";
   text?: string;
   rounded?: boolean;
   size?: string;
@@ -33,6 +34,8 @@ const buttonColor = computed(() => {
       return "bg-info hover:bg-info-dark";
     case "success":
       return "bg-success hover:bg-success-dark";
+    case "transparent":
+      return "";
     default:
       return "bg-secondary hover:bg-secondary-dark";
   }
@@ -62,7 +65,7 @@ const borderClasses = computed(() => {
       buttonColor,
       borderClasses,
       buttonSize,
-      'text-font-color cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)]',
+      'text-font-color cursor-pointer border-black/40 border-2 inset-shadow-[0px_0px_5px_hsla(0,0%,0%,50%)] duration-100',
     ]"
   >
     {{ props.text }}

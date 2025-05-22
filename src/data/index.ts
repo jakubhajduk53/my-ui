@@ -25,7 +25,7 @@ export const buttonViewData = [
     description: "Defines the component's color theme",
     type: "enum",
     enumTooltip:
-      "primary | secondary | tertiary | success | warning | danger | info",
+      "primary | secondary | tertiary | success | warning | danger | info | transparent",
     default: "secondary",
   },
   {
