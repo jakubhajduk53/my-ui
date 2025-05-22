@@ -49,7 +49,7 @@ import { colors } from "../data/";
           <div
             v-for="(className, name) in colors.font"
             :key="name"
-            class="p-5 w-[150px] text-xl md:text-3xl border border-[hsl(26,68%,20%)]"
+            class="p-5 w-[150px] border border-[hsl(26,68%,20%)]"
             :class="className"
           >
             {{ name }}
