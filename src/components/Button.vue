@@ -1,22 +1,8 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import type { ButtonInterface } from "../interfaces";
 
 const props = defineProps<ButtonInterface>();
-
-interface ButtonInterface {
-  color?:
-    | "primary"
-    | "secondary"
-    | "tertiary"
-    | "warning"
-    | "danger"
-    | "info"
-    | "success"
-    | "transparent";
-  text?: string;
-  rounded?: boolean;
-  size?: string;
-}
 
 const buttonColor = computed(() => {
   switch (props.color) {

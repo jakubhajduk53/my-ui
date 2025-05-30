@@ -1,11 +1,5 @@
 <script setup lang="ts">
-interface TableRow {
-  name: string;
-  description: string;
-  type: string;
-  default: string;
-  enumTooltip?: string;
-}
+import type { TableRow } from "../interfaces";
 
 const props = defineProps<{
   rows: TableRow[];

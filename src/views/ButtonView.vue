@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import Button from "../components/Button.vue";
-import Table from "../components/Table.vue";
-import CodeDisplay from "../components/CodeDisplay.vue";
 import {
   buttonViewData,
   themesDisplay,
   radiusDisplay,
   sizeDisplay,
 } from "../data/";
+import Button from "../components/Button.vue";
+import Table from "../components/Table.vue";
+import CodeDisplay from "../components/CodeDisplay.vue";
 </script>
 
 <template>
