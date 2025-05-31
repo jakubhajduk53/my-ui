@@ -18,21 +18,22 @@
 
 ## 🎨 Color Palette
 
-  --color-font-color: hsl(38, 84%, 98%);
-  --color-primary: hsl(204, 77%, 52%);
-  --color-primary-dark: hsl(204, 77%, 42%);
-  --color-secondary: hsl(301, 61%, 40%);
-  --color-secondary-dark: hsl(301, 61%, 35%);
-  --color-tertiary: hsl(327, 100%, 66%);
-  --color-tertiary-dark: hsl(327, 100%, 46%);
-  --color-warning: hsl(26, 68%, 60%);
-  --color-warning-dark: hsl(26, 68%, 45%);
-  --color-danger: hsl(349, 96%, 45%);
-  --color-danger-dark: hsl(349, 96%, 40%);
-  --color-info: hsl(38, 5%, 50%);
-  --color-info-dark: hsl(38, 5%, 45%);
-  --color-success: hsl(151, 94%, 33%);
-  --color-success-dark: hsl(151, 94%, 28%);
+`--color-font-color: hsl(38,84%,98%)`  
+`--color-primary: hsl(204,77%,52%)`  
+`--color-primary-dark: hsl(204,77%,42%)`  
+`--color-secondary: hsl(301,61%,40%)`  
+`--color-secondary-dark: hsl(301,61%,35%)`  
+`--color-tertiary: hsl(327,100%,66%)`  
+`--color-tertiary-dark:h sl(327,100%,46%)`  
+`--color-warning: hsl(26,68%,60%)`  
+`--color-warning-dark: hsl(26,68%,45%)`  
+`--color-danger: hsl(349,96%,45%)`  
+`--color-danger-dark: hsl(349,96%,40%)`  
+`--color-info: hsl(38,5%,50%)`  
+`--color-info-dark: hsl(38,5%,45%)`  
+`--color-success: hsl(151,94%,33%)`  
+`--color-success-dark: hsl(151,94%,28%)`
+
 
 ## 📦 Padding & Gap
 
