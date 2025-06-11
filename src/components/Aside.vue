@@ -18,7 +18,7 @@ const switchAside = () => {
     ]"
   >
     <div
-      class="flex flex-col h-full items-center text-center w-[50vw] sm-[30vw] md:w-[15vw]"
+      class="flex flex-col h-full items-center text-center w-[50vw] sm:w-[30vw] md:w-[15vw]"
     >
       <RouterLink
         to="/"
